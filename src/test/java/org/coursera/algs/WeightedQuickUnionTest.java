@@ -4,12 +4,12 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-public class QuickUnionTest {
-	private QuickUnion q;
+public class WeightedQuickUnionTest {
+	private WeightedQuickUnion q;
 	
 	@Before
 	public void initQuickUnion() {
-		this.q = new QuickUnion(500);
+		this.q = new WeightedQuickUnion(50000);
 	}
 	
 	@Test
@@ -22,4 +22,5 @@ public class QuickUnionTest {
 	public void test_connectFalse() {
 		Assert.assertFalse(q.connected(1, 2));
 	}
+
 }
